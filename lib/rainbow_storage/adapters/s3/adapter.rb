@@ -21,8 +21,6 @@ module RainbowStorage
           new_object.content = data
           new_object.acl = :public_read
           new_object.save
-          new_object.close
-          new_object.unlink
         end
 
         def delete(path)
